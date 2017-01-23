@@ -1,0 +1,48 @@
+<html>
+<head>
+	<script src="script/class.js"></script>
+	<script type="text/javascript">
+		/*String template*/
+		
+		let nome = "Ale";
+		let squadra = "Palermo";
+		//ES5
+		console.log("Salve, sono " + nome + " e la mia squadra è " + squadra);
+		//ES6 - sono permessi anche i newline nella stringa, uso dei placeholder il carattere ` delimita la stringa
+		console.log(`Salve, sono ${nome} e la mia squadra è ${squadra} con ES6`)
+		
+		
+		/* Arrow functions */
+		//EC5
+		var splitter = function(phrase){
+		  return phrase.split(" ");
+		}
+		console.log(splitter("Questa è una frase splittata con ES5!"));	
+		//ES6 arrow function
+		var splitter6 = phrase => phrase.split(" ");
+		console.log(splitter6("Questa è una frase splittata con ES6!"))
+		
+		//class ES6
+		let chris = new Pinguino(5,10);
+		chris.cammina();
+		chris.nuota();
+		
+		//const let var
+		for(var x = 1; x < 5; x++){
+			//in questo caso l'output è 5 5 5 5 5 perchè var è scoped anche fuori dal block e dalla function, diventa globale
+			setTimeout(() => console.log(x), 0)
+		}
+		
+		for(let x = 0; x < 5; x++){
+			//let ha lo scope nel block di definizione e dentro il for
+			setTimeout(() => console.log(x), 0)
+		}
+		
+		const costante = "Valore non più riassegnabile";
+		
+	</script
+</head>
+<body>
+
+</body>
+</html>

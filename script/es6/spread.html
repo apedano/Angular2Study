@@ -1,0 +1,44 @@
+<html>
+<head>
+	<script type="text/javascript">
+		/** Spread syntax **/
+		const add = (x, y) => x + y;
+		let args = [5, 7];
+		//i tre ... sono la notazione della spread syntax
+		add(...args); //come add(args[0], args[1]);
+		
+		let cde = ['c', 'd', 'e'];
+		let abcdef = ['a', 'b', ...cde, 'f'];  //['a', 'b', 'c', 'd', 'e', 'f']
+		
+		let mapABC = {a:1, b:3, c:7};
+		//let mapABCD = { ...mapABC, d:112};
+		
+		/** Rest parameters  **/
+		//indicano un numero implrecisato di argomenti posti in un array e dato come parametro alla funzione
+		function print(a, b, ...more){
+			console.log(arguments[0]); //gli argomenti nella loro interezza
+			console.log(more[0]);
+		}
+		print(1, 2, 3, 4);
+		//1
+		//3
+		
+		/* Destructuring */
+		let foo = [1, 2, 3];
+		
+		let uno = foo[0];
+		let due = foo[1];
+		let tre = foo[2];
+		//diventa
+		let [one two three] = foo;
+		console.log(two); //2
+		
+		
+		
+		
+	</script
+</head>
+<body>
+
+</body>
+</html>
