@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ng-book 2: Angular 2 HTTP</title>
+
+    <script src="/_/vendor/traceur-runtime-0.0.87.js"></script>
+    <script src="/_/vendor/system-0.16.11.js"></script>
+    <script src="/_/vendor/angular2.dev.2.0.0-alpha.37.js"></script>
+    <script src="/_/vendor/angular2-http.dev.2.0.0-alpha.37.js"></script>
+
+    {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+      <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+    {% } %}
+  </head>
+  <body>
+    <http-app></http-app>
+    <script src="/core.js"></script>
+    <script src="/bundle.js"></script>
+  </body>
+</html>

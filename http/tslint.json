@@ -52,10 +52,10 @@
       "check-else",
       "check-whitespace"
     ],
-    "quotemark": [true, "single"],
+    "quotemark": [true, "double"],
     "radix": true,
     "semicolon": true,
-    "sort-object-literal-keys": false,
+    "sort-object-literal-keys": true,
     "triple-equals": [true, "allow-null-check"],
     "typedef": [true,
         "call-signature",
